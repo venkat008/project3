@@ -43,15 +43,15 @@ $(function(){
         tagItems += '<div class="profile">';
         tagItems += '<img src="' + value.caption.from.profile_picture + '" />';
         tagItems += '</div>';
-        tagItems += '<ul class="tags">';
-        tagItems +='<li>';
+        tagItems += '<div class="tags">';
+        // tagItems +='<li>';
         tagItems += '<p>' + value.caption.from.username + '</p>';
         tagItems += '<p>'
         tagItems += '<i class="fa fa-heart"></i> ' +value.likes.count+ ' ';
         tagItems += '<i class="fa fa-comments"></i> ' +value.comments.count;
         tagItems += '</p>'
-        tagItems += '</li>';
-        tagItems += '</ul>';
+        // tagItems += '</li>';
+        tagItems += '</div>';
         tagItems += '</div>';
         tagItems += '</div>';
     });
@@ -81,15 +81,15 @@ $(function(){
         tagItems2 += '<div class="profile">';
         tagItems2 += '<img src="' + value.caption.from.profile_picture + '" />';
         tagItems2 += '</div>';
-        tagItems2 += '<ul class="tags">';
-        tagItems2 +='<li>';
+        tagItems2 += '<div class="tags">';
+        // tagItems2 +='<li>';
         tagItems2 += '<p>' + value.caption.from.username + '</p>';
         tagItems2 += '<p>'
         tagItems2 += '<i class="fa fa-heart"></i> ' +value.likes.count+ ' ';
         tagItems2 += '<i class="fa fa-comments"></i> ' +value.comments.count;
         tagItems2 += '</p>'
-        tagItems2 += '</li>';
-        tagItems2 += '</ul>';
+        // tagItems2 += '</li>';
+        tagItems2 += '</div>';
         tagItems2 += '</div>';
         tagItems2 += '</div>';
     });
@@ -104,7 +104,7 @@ $(function(){
 
        else {
          $('#loaader').hide();
-            tagItems += '<p style="margin-top: 18px;">Sorry, artist not found.</p>';
+            tagItems += '<p style="margin-top: 18px;">Sorry, nothing found! Please try again..</p>';
          }
          $tagList.append(tagItems);
       })
